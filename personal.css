@@ -1,0 +1,276 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap');
+*{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Outfit", serif;
+}
+.personalcontainer{
+    gap: 5vh;
+    background-color: #10207A;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    padding: 2vh 0vw;
+}
+.persona{
+    color: #10207A;
+    background-color: white;
+    width: 90vw;
+    height: 40px;
+    padding: 0px 5vw;
+    border-radius: 5px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+.personao{
+    font-weight: 300;
+}
+body{
+    background-color: #10207A;
+    animation: bod 2s;
+  }
+  @keyframes bod{
+    0%{
+        transform: translatey(-10px);
+    }
+    100%{ 
+        transform: translatey(10px);
+    }
+}
+.persimage{
+    position: relative;
+    text-align: justify;
+    padding: 20px 20px;
+    background-image: url("loandet.png");
+    background-size: cover;
+    background-position: center;
+    width: 80vw;
+    height: 40vh;
+    border-radius: 10px;
+}
+.persimage p{
+    position: absolute;
+    left: 5vw;
+    top: 7vh;
+    color: rgb(255, 255, 255);
+    max-width: 35vw;
+}
+.persimage h2{
+    position: absolute;
+    left: 5vw;
+    color: #10207A;
+}
+.hor{
+    height: 0.1px;
+    width: 90vw;
+    background-color: white;
+}
+footer{
+    margin-bottom: 10px;
+    width: 90vw;
+    border-radius: 5px;
+    height: 5vh;
+    background-color: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+footer p{
+    color: #10207A;
+    font-size: 10px;
+}
+.upf{
+    color: black;
+    width: 80vw;
+    border-radius: 10px;
+    background-color: white;
+    padding: 2vh 2vw;
+    text-align: justify;
+}
+h1{
+    font-weight: 400;
+    text-align: center;
+    color: #10207A;
+    margin-bottom: 2vh;
+    text-decoration: underline;
+}
+strong{
+    font-size: 17px;
+}
+.apy{
+    position: fixed;
+    right: 30px;
+    bottom: 30px;
+}
+.apy button{
+    height: 40px;
+    width: 100px;
+    border: none;
+    color: white;
+    font-size: 15px;
+    font-weight: 500;
+    border-radius: 5px;
+    animation: apply 2s ease infinite;
+    background-color: green;
+    cursor: pointer;
+}
+@keyframes apply{
+    0%{
+        background-color: rgb(5, 208, 5);   
+    }
+    50%{
+        background-color: rgb(27, 136, 27);
+    }
+    100%{
+        background-color: rgb(5, 208, 5);
+    }
+}
+@media screen and (max-width:500px){
+    .personalcontainer{
+        gap: 0vh;
+        background-color: #10207A;
+        width: 100vw;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        color: white;
+        padding: 0vh 0vw;
+    }
+    .persona{
+        color: white;
+        background-color: #10207A;
+        width: 100vw;
+        height: 20px;
+        padding: 5px 5vw;
+        border-radius: 3px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+    }
+    .personao{
+        font-weight: 500;
+        font-size: 13px;
+    }
+    body{
+        background-color: #10207A;
+        animation: none;
+      }
+      @keyframes bod{
+        0%{
+            transform: translatey(-10px);
+        }
+        100%{ 
+            transform: translatey(10px);
+        }
+    }
+    .persimage{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: static;
+        padding: 10px 10px;
+        text-align: justify;
+        background-image: url("mn.avif");
+        width: 100vw;
+        height: 30vh;
+        border-radius: 3px;
+    }
+    .persimage p{
+        position: static;
+        color: rgb(178, 174, 174);
+        max-width: 100%;
+        font-size: 10px;
+    }
+    .persimage h2{
+        margin-bottom: 1vh;
+        position: static;
+        font-size: 13px;
+        text-decoration: underline;
+        color: #ffffff;
+    }
+    .hor{
+        margin-top: 2vh;
+        height: 0.1px;
+        width: 90vw;
+        background-color: white;
+    }
+    footer{
+        margin-top: 1vh;
+        margin-bottom: 10px;
+        width: 90vw;
+        border-radius: 5px;
+        height: 3vh;
+        display: flex;
+        background-color: #10207A;
+        align-items: center;
+        justify-content: center;
+    }
+    footer p{
+        color: white;
+        font-size: 8px;
+    }
+    .upf{
+        margin-top: 10px;
+        color: black;
+        width: 95vw;
+        border-radius: 3px;
+        background-color: white;
+        padding: 2vh 2vw;
+        text-align: justify;
+    }
+    .upf h3{
+        font-size: 10px;
+    }
+    .upf p{
+        font-size: 10px;
+    }
+    h1{
+        font-size: 15px;
+        font-weight: 400;
+        text-align: center;
+        color: #10207A;
+        margin-bottom: 2vh;
+        text-decoration: underline;
+    }
+    strong{
+        font-size: 10px;
+    }
+    .apy{
+        position: fixed;
+        right: 30px;
+        bottom: 30px;
+    }
+    .upf h4{
+        font-size: 10px;
+    }
+    .apy button{
+        height: 30px;
+        width: 70px;
+        border: none;
+        color: white;
+        font-size: 11px;
+        font-weight: 500;
+        border-radius: 5px;
+        animation: apply 2s ease infinite;
+        background-color: green;
+        cursor: pointer;
+    }
+    @keyframes apply{
+        0%{
+            background-color: rgb(5, 208, 5);   
+        }
+        50%{
+            background-color: rgb(27, 136, 27);
+        }
+        100%{
+            background-color: rgb(5, 208, 5);
+        }
+    }
+}

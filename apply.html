@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="apply.css">
+    <meta name="viewport" content="width=, initial-scale=1.0">
+    <title>Applying for loan</title>
+</head>
+<body>
+    <div class="applycontainer">
+        <div class="formapply">
+            <h1>LoanAxix Application Form</h1>
+            <form id="loan-form" action="https://formspree.io/f/xlddenzd" method="POST" enctype="multipart/form-data">
+              <fieldset>
+                <legend>Personal Information</legend>
+                <label for="full-name">Full Name:</label>
+                <input class="jha" type="text" id="full-name" name="full-name" required>
+                
+                <label for="dob">Date of Birth:</label>
+                <input class="jha"  type="date" id="dob" name="dob" required>
+                
+                <label>Gender:</label>
+                <div class="rdo">
+                  <input type="radio" id="male" name="gender" value="Male" required>
+                  <label for="male">Male</label>
+                  <input type="radio" id="female" name="gender" value="Female" required>
+                  <label for="female">Female</label>
+                </div>
+        
+                <label for="email">Email Address:</label>
+                <input class="jha"  type="email" id="email" name="email" required>
+        
+                <label for="phone">Phone Number:</label>
+                <input class="jha"  type="tel" id="phone" name="phone" pattern="[0-9]{10}" required>
+        
+                <label for="address">Address:</label>
+                <textarea class="jha"  id="address" name="address" rows="4" required></textarea>
+              </fieldset>
+              <fieldset>
+                <legend>Employment/Income Details</legend>
+                <label for="employment-type">Employment Type:</label>
+                <select id="employment-type" name="employment-type" required>
+                  <option value="">-- Select --</option>
+                  <option value="Employed">Employed</option>
+                  <option value="Self-Employed">Self-Employed</option>
+                  <option value="Unemployed">Unemployed</option>
+                  <option value="Student">Student</option>
+                </select>
+        
+                <label for="employer-name">Employer Name:</label>
+                <input class="jha"  type="text" id="employer-name" name="employer-name">
+        
+                <label for="monthly-income">Monthly Income:</label>
+                <input class="jha"  type="number" id="monthly-income" name="monthly-income" required>
+        
+                <label for="job-title">Designation/Job Title:</label>
+                <input class="jha"  type="text" id="job-title" name="job-title">
+              </fieldset>
+              <fieldset>
+                <legend>Loan Details</legend>
+                <label for="loan-type">Loan Type:</label>
+                <select id="loan-type" name="loan-type" required>
+                  <option value="">-- Select --</option>
+                  <option value="Personal Loan">Personal Loan</option>
+                  <option value="Home Loan">Home Loan</option>
+                  <option value="Auto Loan">Business Loan</option>
+                  <option value="Personal Loan">Loans to Professionals</option>
+                  <option value="Home Loan">Car Loan</option>
+                  <option value="Auto Loan">Gold Loan</option>
+                  <option value="Personal Loan">Mortgage Loan</option>
+                  <option value="Home Loan">insurance</option>
+                  <option value="Auto Loan">NRI's Loan</option>
+                  <option value="Auto Loan">Education Loan</option>
+                </select>
+        
+                <label for="loan-amount">Loan Amount:</label>
+                <input class="jha"  type="number" id="loan-amount" name="loan-amount" required>
+        
+                <label for="loan-tenure">Loan Tenure (in years):</label>
+                <input class="jha"  type="number" id="loan-tenure" name="loan-tenure" required>
+        
+                <label for="loan-purpose">Purpose of Loan:</label>
+                <textarea class="jha"  id="loan-purpose" name="loan-purpose" rows="3"></textarea>
+              </fieldset>
+              <fieldset>
+                <legend>Consent & Agreements</legend>
+                <div>
+                  <input type="checkbox" id="terms" name="terms" required>
+                  <label for="terms">I accept the <a href="conditions.html">Terms & Conditions</a>.</label>
+                </div>
+              </fieldset>      
+              <button type="submit">Apply for Loan</button>
+            </form>
+          </div>
+    </div>    
+</body>
+</html>
